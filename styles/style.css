@@ -347,14 +347,11 @@ footer .social-links a:hover {
 @media screen and (max-width: 768px){
 	nav{
 		padding: 10px 6vw;
+		justify-content: center;
 	}
 
 	h1{
 		font-size: 5ex;
-	}
-
-	div#logo > img{
-		width: 150px;
 	}
 
 	div#hero{
@@ -383,15 +380,24 @@ footer .social-links a:hover {
 	div#hero div{
 		width: 100%;
 	}
+
+	div#logo{
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 425px){
 	nav{
-		padding: 10px 2vw;
+		font-size: x-small;
+	}
+
+	button{
+		font-size: x-small;
 	}
 	
 	div#logo > img{
-		width: 100px;
+		visibility: hidden;
 	}
 	div#hero{
 		flex-direction: column;
