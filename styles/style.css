@@ -364,7 +364,12 @@ h2{
 	}
 	nav{
 		padding: 10px 6vw;
+		font-size: small;
 		justify-content: center;
+	}
+
+	button{
+		font-size: small;
 	}
 
 	h1{
