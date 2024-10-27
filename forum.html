@@ -1,84 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-<link rel="icon" href="./public/LOGO.ico">	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Discussion Forum - BrightPath</title>
-	<link rel="stylesheet" href="./styles/style.css">
-	<link rel="stylesheet" href="./styles/forum.css">
-</head>
-<body>
-	<nav>
-		<div id="logo">
-			<a href="#">
-				<img src="./public/LOGO-removebg-preview.png" alt="BrightPath Logo">
-			</a>
-		</div>
-		<div>
-			<ul>
-				<li><a href="./index.html">Home</a></li>
-				<li><a href="./courses.html">Courses</a></li>
-				<li><a href="./joinus.html">Enroll</a></li>
-				<li><a href="#">Chat</a></li>
-				<li><button class="primary log"><a href="./login.html">Login</a></button></li>
-				<li><button class="secondary log"><a href="./joinus.html">Join-us</a></button></li>
-			</ul>
-		</div>
-	</nav>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./public/LOGO.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discussion Forum - BrightPath</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/forum.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <a href="#">
+          <img src="./public/LOGO-removebg-preview.png" alt="BrightPath Logo" />
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./joinus.html">Enroll</a></li>
+          <li><a href="#">Chat</a></li>
+          <li>
+            <button class="primary log">
+              <a href="./login.html">Login</a>
+            </button>
+          </li>
+          <li>
+            <button class="secondary log">
+              <a href="./joinus.html">Join-us</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-	<section class="forum-section">
-		<h1>BrightPath Discussion Forum</h1>
-		<p>Connect with peers, ask questions, and share knowledge.</p>
+    <section class="forum-section">
+      <h1>BrightPath Discussion Forum</h1>
+      <p>Connect with peers, ask questions, and share knowledge.</p>
 
-		<div class="forum-container">
-			<div class="forum-header">
-				<h2>Topics</h2>
-				<button class="primary new-topic-btn">New Topic</button>
-			</div>
+      <div class="forum-container">
+        <div class="forum-header">
+          <h2>Topics</h2>
+          <button class="primary new-topic-btn">New Topic</button>
+        </div>
 
-			<!-- Example Topic -->
-			<div class="topic-card">
-				<h3>How to stay motivated while learning online?</h3>
-				<p>Started by <strong>John Doe</strong> on Oct 27, 2024</p>
-				<a href="#" class="view-thread">View Thread</a>
-			</div>
+        <!-- Example Topic -->
+        <div class="topic-card">
+          <h3>How to stay motivated while learning online?</h3>
+          <p>Started by <strong>John Doe</strong> on Oct 27, 2024</p>
+          <a href="#" class="view-thread">View Thread</a>
+        </div>
 
-			<div class="topic-card">
-				<h3>Best resources for learning data science?</h3>
-				<p>Started by <strong>Jane Smith</strong> on Oct 20, 2024</p>
-				<a href="#" class="view-thread">View Thread</a>
-			</div>
+        <div class="topic-card">
+          <h3>Best resources for learning data science?</h3>
+          <p>Started by <strong>Jane Smith</strong> on Oct 20, 2024</p>
+          <a href="#" class="view-thread">View Thread</a>
+        </div>
 
-			<!-- Add more topics as needed -->
-		</div>
+        <!-- Add more topics as needed -->
+      </div>
 
-		<!-- New Topic Form (Initially Hidden) -->
-		<div class="new-topic-form">
-			<h2>Start a New Topic</h2>
-			<form>
-				<label for="topic-title">Title</label>
-				<input type="text" id="topic-title" name="topic-title" required>
+      <!-- New Topic Form (Initially Hidden) -->
+      <div class="new-topic-form">
+        <h2>Start a New Topic</h2>
+        <form>
+          <label for="topic-title">Title</label>
+          <input type="text" id="topic-title" name="topic-title" required />
 
-				<label for="topic-description">Description</label>
-				<textarea id="topic-description" name="topic-description" rows="4" required></textarea>
+          <label for="topic-description">Description</label>
+          <textarea
+            id="topic-description"
+            name="topic-description"
+            rows="4"
+            required
+          ></textarea>
 
-				<button type="submit" class="primary">Submit</button>
-			</form>
-		</div>
-	</section>
-	<div class="cta">
-		<h2>Start Learning Today</h2>
-		<p>Join thousands of learners on BrightPath and take the next step in your career.</p>
-		<button class="secondary">Sign Up Now</button>
-	</div>
+          <button type="submit" class="primary">Submit</button>
+        </form>
+      </div>
+      <!-- New Topic Form 1 -->
+      <div class="new-topic-form">
+        <h2>Start a New Topic: Web Development</h2>
+        <form>
+          <label for="web-dev-title">Title</label>
+          <input type="text" id="web-dev-title" name="web-dev-title" required />
 
-	<footer>
-		<p>&copy; 2024 BrightPath. All rights reserved.</p>
-		<div class="social-links">
-			<a href="#">Facebook</a>
-			<a href="#">Twitter</a>
-			<a href="#">LinkedIn</a>
-		</div>
-	</footer>
-</body>
+          <label for="web-dev-description">Description</label>
+          <textarea
+            id="web-dev-description"
+            name="web-dev-description"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- New Topic Form 2 -->
+      <div class="new-topic-form">
+        <h2>Start a New Topic: Data Science</h2>
+        <form>
+          <label for="data-sci-title">Title</label>
+          <input
+            type="text"
+            id="data-sci-title"
+            name="data-sci-title"
+            required
+          />
+
+          <label for="data-sci-description">Description</label>
+          <textarea
+            id="data-sci-description"
+            name="data-sci-description"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- New Topic Form 3 -->
+      <div class="new-topic-form">
+        <h2>Start a New Topic: Digital Marketing</h2>
+        <form>
+          <label for="digital-marketing-title">Title</label>
+          <input
+            type="text"
+            id="digital-marketing-title"
+            name="digital-marketing-title"
+            required
+          />
+
+          <label for="digital-marketing-description">Description</label>
+          <textarea
+            id="digital-marketing-description"
+            name="digital-marketing-description"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- New Topic Form 4 -->
+      <div class="new-topic-form">
+        <h2>Start a New Topic: Artificial Intelligence</h2>
+        <form>
+          <label for="ai-title">Title</label>
+          <input type="text" id="ai-title" name="ai-title" required />
+
+          <label for="ai-description">Description</label>
+          <textarea
+            id="ai-description"
+            name="ai-description"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- New Topic Form 5 -->
+      <div class="new-topic-form">
+        <h2>Start a New Topic: Cloud Computing</h2>
+        <form>
+          <label for="cloud-computing-title">Title</label>
+          <input
+            type="text"
+            id="cloud-computing-title"
+            name="cloud-computing-title"
+            required
+          />
+
+          <label for="cloud-computing-description">Description</label>
+          <textarea
+            id="cloud-computing-description"
+            name="cloud-computing-description"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- New Topic Form 6 -->
+      <div class="new-topic-form">
+        <h2>Start a New Topic: Mobile App Development</h2>
+        <form>
+          <label for="mobile-app-title">Title</label>
+          <input
+            type="text"
+            id="mobile-app-title"
+            name="mobile-app-title"
+            required
+          />
+
+          <label for="mobile-app-description">Description</label>
+          <textarea
+            id="mobile-app-description"
+            name="mobile-app-description"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="primary">Submit</button>
+        </form>
+      </div>
+    </section>
+    <div class="cta">
+      <h2>Start Learning Today</h2>
+      <p>
+        Join thousands of learners on BrightPath and take the next step in your
+        career.
+      </p>
+      <button class="secondary">Sign Up Now</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 BrightPath. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </footer>
+  </body>
 </html>
