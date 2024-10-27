@@ -3,39 +3,103 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BrightPath</title>
+	<title>BrightPath - E-learning Platform</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="login.css">
 </head>
 <body>
 	<nav>
 		<div id="logo">
 			<a href="#">
-				<img src="./public/LOGO-removebg-preview.png" alt="logo">
+				<img src="./public/LOGO-removebg-preview.png" alt="BrightPath Logo">
 			</a>
 		</div>
 		<div>
 			<ul>
-				<li><a href="#">First</a></li>
-				<li><a href="#">Second</a></li>
-				<li><a href="#">Third</a></li>
-				<li><button class="primary">login</button></li>
-				<li><button class="secondary">signup</button></li>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./courses.html">Courses</a></li>
+				<li><a href="./joinus.html">Enroll</a></li>
+				<li><a href="#">Chat</a></li>
+				<li><button class="primary log"><a href="./login.html">Login</a></button></li>
+				<li><button class="secondary log"><a href="./joinus.html">Join-us</a></button></li>
 			</ul>
 		</div>
 	</nav>
-	<div class="hero">
+
+	<div id="hero" class="section">
 		<div class="herotxt">
-			<h1>
-				BrightPath
-			</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur, ipsum expedita in eveniet non aliquam perspiciatis quos eum? Sint aliquid consequatur totam quas minima molestiae veniam commodi sequi non.
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium at dolore repellat dignissimos perspiciatis non architecto, porro molestias delectus, corporis impedit magnam ipsa ipsum amet totam similique nisi a debitis!	
-			</p>
+			<h1>BrightPath</h1>
+			<p>Empowering you with the best online courses to advance your skills and career.</p>
+			<div>
+				<button id="CTA">Get Started</button>
+			</div>
 		</div>
-		<div class="heroimg">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aperiam alias, doloremque voluptatum aut numquam quia nobis impedit asperiores suscipit nostrum voluptatem atque ipsa corrupti vel et, qui iusto quo!
+		<div class="heroimg-container">
+			<img src="./public/hero-image.png" alt="Learning illustration" class="hero-img">
 		</div>
 	</div>
+
+	<div id="courses" class="section">
+		<h2>Popular Courses</h2>
+		<div class="flex-courses-container">
+			<div class="course-card">
+				<img src="./public/course1.jpg" alt="Course 1">
+				<h3>Web Development</h3>
+				<p>Learn the fundamentals of HTML, CSS, and JavaScript to build stunning websites.</p>
+				<div class="spring"></div>
+				<button class="primary">Enroll Now</button>
+			</div>
+			<div class="course-card">
+				<img src="./public/course2.jpg" alt="Course 2">
+				<h3>Data Science</h3>
+				<p>Master data analysis, machine learning, and statistical techniques.</p>
+				<div class="spring"></div>
+				<button class="primary">Enroll Now</button>
+			</div>
+			<div class="course-card">
+				<img src="./public/course3.jpg" alt="Course 3">
+				<h3>Digital Marketing</h3>
+				<p>Gain insights into SEO, social media, and digital ad campaigns.</p>
+				<div class="spring"></div>
+				<button class="primary">Enroll Now</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="testimonials" class="section">
+		<h2>What Our Students Say</h2>
+		<div class="testimonial-container">
+			<div class="testimonial">
+				<img src="./public/user.jpg" alt="user">
+				<p>"BrightPath changed my career! The courses are well-structured and engaging."</p>
+				<span>- Jamie R., Web Developer</span>
+			</div>
+			<div class="testimonial">
+				<img src="./public/user.jpg" alt="user">
+				<p>"The instructors are fantastic. I learned so much in a short time."</p>
+				<span>- Alex M., Data Analyst</span>
+			</div>
+			<div class="testimonial">
+				<img src="./public/user.jpg" alt="user">
+				<p>"The instructors are fantastic. I learned so much in a short time."</p>
+				<span>- Alex M., Data Analyst</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="cta">
+		<h2>Start Learning Today</h2>
+		<p>Join thousands of learners on BrightPath and take the next step in your career.</p>
+		<button class="secondary"><a href="./joinus.html">Sign Up Now</a></button>
+	</div>
+
+	<footer>
+		<p>&copy; 2024 BrightPath. All rights reserved.</p>
+		<div class="social-links">
+			<a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+			<a href="#">LinkedIn</a>
+		</div>
+	</footer>
 </body>
 </html>

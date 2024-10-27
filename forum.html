@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Discussion Forum - BrightPath</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="forum.css">
+</head>
+<body>
+	<nav>
+		<div id="logo">
+			<a href="index.html">
+				<img src="./public/LOGO-removebg-preview.png" alt="logo">
+			</a>
+		</div>
+		<div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><button class="log primary">Login</button></li>
+				<li><button class="log secondary">Signup</button></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="forum-section">
+		<h1>BrightPath Discussion Forum</h1>
+		<p>Connect with peers, ask questions, and share knowledge.</p>
+
+		<div class="forum-container">
+			<div class="forum-header">
+				<h2>Topics</h2>
+				<button class="primary new-topic-btn">New Topic</button>
+			</div>
+
+			<!-- Example Topic -->
+			<div class="topic-card">
+				<h3>How to stay motivated while learning online?</h3>
+				<p>Started by <strong>John Doe</strong> on Oct 27, 2024</p>
+				<a href="#" class="view-thread">View Thread</a>
+			</div>
+
+			<div class="topic-card">
+				<h3>Best resources for learning data science?</h3>
+				<p>Started by <strong>Jane Smith</strong> on Oct 20, 2024</p>
+				<a href="#" class="view-thread">View Thread</a>
+			</div>
+
+			<!-- Add more topics as needed -->
+		</div>
+
+		<!-- New Topic Form (Initially Hidden) -->
+		<div class="new-topic-form">
+			<h2>Start a New Topic</h2>
+			<form>
+				<label for="topic-title">Title</label>
+				<input type="text" id="topic-title" name="topic-title" required>
+
+				<label for="topic-description">Description</label>
+				<textarea id="topic-description" name="topic-description" rows="4" required></textarea>
+
+				<button type="submit" class="primary">Submit</button>
+			</form>
+		</div>
+	</section>
+	<div class="cta">
+		<h2>Start Learning Today</h2>
+		<p>Join thousands of learners on BrightPath and take the next step in your career.</p>
+		<button class="secondary">Sign Up Now</button>
+	</div>
+
+	<footer>
+		<p>&copy; 2024 BrightPath. All rights reserved.</p>
+		<div class="social-links">
+			<a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+			<a href="#">LinkedIn</a>
+		</div>
+	</footer>
+</body>
+</html>
