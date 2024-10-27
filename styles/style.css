@@ -87,7 +87,7 @@ div#hero{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 5vw;
+	padding: 0 10vw;
 	box-sizing: border-box;
 	text-align: left;
 }
