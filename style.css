@@ -136,6 +136,10 @@ div.hero div {
 	width: 47%;
 }
 
+h1{
+	color: var(--secondary-color);
+}
+
 @media screen and (max-width: 768px){
 	nav{
 		padding: 10px 6vw;
